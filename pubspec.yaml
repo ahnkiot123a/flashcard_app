@@ -1,0 +1,68 @@
+name: jlpt_exp
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get: ^4.6.6
+  flex_color_scheme: ^7.3.1
+  phosphor_flutter: ^2.0.1
+  flutter_gemini: ^2.0.3
+  flutter_markdown: any
+  lottie: ^3.1.0
+  flutter_animate: ^4.5.0
+  video_player: ^2.8.3
+  flick_video_player: ^0.9.0
+  visibility_detector: ^0.4.0+2
+  just_audio: ^0.9.36
+  audioplayers: ^6.1.0
+  flutter_tts: ^4.0.2
+  auto_size_text: ^3.0.0
+  google_nav_bar: ^5.0.6
+  line_icons: ^2.0.3
+  flip_card: ^0.7.0
+  animations: ^2.0.11
+
+
+dev_dependencies: 
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.0
+  flutter_gen_runner: any
+  build_runner: any
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/data/
+    - assets/lotties/
+    - assets/images/
+  uses-material-design: true
+
+
+flutter_gen:
+  output: lib/config/assets
+
+flutter_launcher_icons: 
+  android: launcher_icon
+  image_path: assets/images/app_icon_bg.jpeg
+  web: 
+    image_path: assets/images/app_icon_bg.jpeg
+    background_color: '#hexcode'
+    theme_color: '#hexcode'
+    generate: true
+  windows: 
+    image_path: assets/images/app_icon_bg.jpeg
+    generate: true
+    icon_size: 48
+  macos: 
+    image_path: assets/images/app_icon_bg.jpeg
+    generate: true
+  ios: true
+  min_sdk_android: 21
+
